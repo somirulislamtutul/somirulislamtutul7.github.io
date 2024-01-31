@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+/*----------------------------Navbar section start--------------------------*/
+#navbar{
+    background: #f9f9f9;
+}
+#nav-navbar{
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+#logo{
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffa500;
+    text-shadow: 0px 1px #000;
+    margin-bottom: 5px;
+}
+#span{
+    color: #000;
+    font-weight: 700;
+    font-size: 35px;
+}
+.navbar-toggler span{
+    color: #ffa500;
+}
+.navbar-nav{
+    margin-left: 30px;
+}
+.nav-item .nav-link{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 550;
+    color: #000;
+    letter-spacing: 2px;
+    border-radius: 5%;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: #f9f9f9;
+    transition: 1s ease;
+}
+#navbar form button{
+    background: #ffa500;
+    color: #f9f9f9;
+    border: none;
+}
+
+/*----------------------------Navbar section End--------------------------*/
+
+/*----------------------------Home section start--------------------------*/
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url(./media/images/6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .content{
+    text-align: center;
+    padding-top: 15%;
+}
+.home .content h5{
+    color: #f9f9f9;
+    font-weight: 500;
+    font-size: 38px;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: #ffa500;
+    font-size: 60px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.carousel-inner h5{
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffa500;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 2px;
+    border-radius: 10px;
+    letter-spacing: 15px;
+}
+
+.home .content h3{
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.home .content a{
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    color:#000;
+    font-weight: 550;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.home .content a:hover{
+    background: #ffa500;
+    color: #f9f9f9;
+}
+
+.changecontent::after{
+    content: '';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 15s infinite linear;
+}
+@keyframes changetext{
+    10%{content: "France";}
+    20%{content: "India";}
+    30%{content: "USA";}
+    40%{content: "UK";}
+    0%{content: "France";}
+    60%{content: "Nepal";}
+    70%{content: "Srilanka";}
+    80%{content: "Pakisthan";}
+    90%{content: "Italy";}
+    100%{content: "Bangladesh";}
+}
+.home .content h2{
+    color: white;
+    font-size: 50px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*----------------------------Home section End--------------------------*/
+
+
+/*----------------------------Book section Start--------------------------*/
+.book{
+    background: #f9f9f9;
+    padding: 50px;
+    
+}
+#main-text h2{
+    
+    padding-bottom: 30px;
+    text-align: center;
+    text-shadow: 0px 1px 1px;
+    font-weight: 600;
+}
+#main-text h2 span{
+    color: #ffa500;
+}
+.book .card{
+    border-radius: 20px;
+    box-shadow: 0px 5px -6px #000;
+    transition: all 0.3s ease;
+}
+.book .card img{
+    width: 100%;
+    height: 50vh;
+    border-radius: 20px;
+    box-shadow: 0px 5px -6px #000;
+}
+
+.book .row{
+    margin-top: 30px;
+
+}
+.book form input{
+    padding: 10px;
+    color: #000;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px #000;
+
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px #000;
+    height: 200px;
+}
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    background: #ffa500;
+    color: #f9f9f9;
+    margin-top: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.book .submit:hover{
+    width: 170px;
+}
+
+
+/*----------------------------Book End--------------------------*/
+/*----------------------------Package Start--------------------------*/
+.main-text h2{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px #000;
+}
+.main-text h2 span{
+    color: #ffa500;
+}
+.package .card{
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 1) 0px 4px 12px;
+    cursor: pointer;
+}
+.package .card img{
+    border-radius: 10px;
+    height: 40vh;
+    width: 100%;
+}
+.package .card .card-body{
+    background: transparent;
+}
+.package .card .card-body h3{
+    font-size: 25px;
+    font-weight: 500;
+}
+.package .card .card-body h6{
+    font-size: 20px;
+    font-weight: 500;
+}
+.package .card .card-body p{
+    font-size: 15px;
+}
+.star{
+    color: #ffa500;
+}
+.package .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: #ffa500;
+    color: #f9f9f9;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+/*----------------------------Package End--------------------------*/
+
+/*----------------------------Service Section Start--------------------------*/
+.services{
+    background: #f9f9f9;
+    margin-top: 30px;
+    padding-bottom: 50px;
+
+}
+.services .card{
+    box-shadow: 0px 5px 5px -6px #000;
+    border: none;
+    cursor: pointer;
+
+}
+.services .card .fa{
+    font-size: 80px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.services .card .card-body{
+    font-weight: 600;
+}
+.services .card .card-body{
+    text-align: center;
+}
+.services h2 {
+    margin-top: 15px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+/*----------------------------Service Section End--------------------------*/
+#footer{
+    padding-top: 50px;
+    padding-bottom: 35px;
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #f9f9f9;
+}
+#footer img{
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px #000;
+
+}
+#footer h1 span{
+    color: #ffa500;
+}
+.social-link .fa{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: #000;
+    color:white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.social-link .fa:hover{
+    background: #ffa500;
+    color: #f9f9f9;
+}
+
